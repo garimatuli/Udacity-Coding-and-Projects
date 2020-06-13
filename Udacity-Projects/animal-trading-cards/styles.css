@@ -1,0 +1,30 @@
+/* add your CSS here */
+
+.labels {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+.outer {
+  border: 1px solid lightgray;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 8px 5px lightgray;
+}
+
+.inner {
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  margin-top: 15px;
+  padding: 10px;
+  width: 280px;
+}
