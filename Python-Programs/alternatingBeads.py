@@ -1,5 +1,13 @@
 import turtle
 
+def bead_color(num):
+    if num % 3 == 0:
+        return "red"
+    elif num%3 == 1:
+        return "green"
+    else:
+        return "blue"
+
 def bead(tur):
     tur.right(75)
     for _ in range(12):
@@ -13,15 +21,12 @@ t.width(2)
 
 # Move to the left before starting.
 t.penup()
-t.back(180)
+t.back(200)
 t.pendown()
 
 # Draw ten beads.
-for n in range(9):
-    if (n % 2 != 0):
-        t.color("blue")
-    else:
-        t.color("red")
+for n in range(10):
+    t.color(bead_color(n))
     bead(t)
     t.forward(40)
 
