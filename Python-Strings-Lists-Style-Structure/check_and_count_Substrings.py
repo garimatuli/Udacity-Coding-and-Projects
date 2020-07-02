@@ -15,7 +15,7 @@ print(is_substring('abracadabra', 'gar'))  # False
 print(is_substring('abracadabra', 'd'))  # True
 
 
-# Counting substrings in a string
+# Counting occurrence of a substring in a string
 
 def count_substrings(substring, string):
     count = 0
@@ -37,7 +37,7 @@ print(count_substrings('AA', 'AAAA'))  # 3
 # If that's the behavior we want, great! But if not, below is the function to fix it in case of Overlapping Matches
 
 
-# Counting substrings in a string (IN CASE OF OVERLAPPING MATCHES)
+# Counting occurrence of a substring in a string  (IN CASE OF OVERLAPPING MATCHES)
 
 def count_overlapping_substrings(substring, string):
     count = 0
@@ -54,4 +54,17 @@ def count_overlapping_substrings(substring, string):
 
 print(count_overlapping_substrings('code', 'code, code, code, all you need is code'))  # 4
 print(count_overlapping_substrings('AA', 'AAAA'))  # 2
+
+
+# using built-in Functions
+
+# Finds if substring present in a string or not
+print('cad' in 'abracadabra')  # True
+print('gar' in 'abracadabra')  # False
+print('d' in 'abracadabra')  # True
+
+# Counting occurrence of a substring in a string (it always does that as a Non-OVERLAPPING case.)
+print('code, code, code, all you need is code'.count('code'))  # 4
+print('AAAA'.count('AA'))  # 2
+
 

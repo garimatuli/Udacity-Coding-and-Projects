@@ -35,3 +35,9 @@ def locate_first_substring(substring, string):
 print(locate_first_substring('ook', 'cookbook'))  # [1, 5]
 print(locate_first_substring('code', 'codbook'))  # -1
 
+
+# using built-in Functions
+
+# Locating 1st occurrence of a substring in a string
+print('cookbook'.find('ook'))  # 1
+print('codbook'.find('code'))  # -1
