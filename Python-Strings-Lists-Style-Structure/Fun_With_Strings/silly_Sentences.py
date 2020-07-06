@@ -14,7 +14,7 @@ def silly_string(nouns, verbs, templates):
     output = []  # We'll append strings into this list for output.
     index = 0  # Keep track of where in the template string we are.
     length_n = len('{{noun}}')  # length of string literal {{noun}}
-    length_v = len('{{verb}}')
+    length_v = len('{{verb}}')  # length of string literal {{verb}}
     # while loop to loop over index positions of template.
     while index < len(template):
         if template[index:index + length_n] == '{{noun}}':
